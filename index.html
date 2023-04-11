@@ -6,34 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web Developer - Brandon Hernz</title>
     <link rel="stylesheet" href="./css/main.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet" />
   </head>
   <body>
     <main class="container">
       <section class="card">
-        <figure class="card__photo">
-          <img src="./images/photo-brandon.jpeg" width="64px" alt="Brandon Hernz" />
-          <figcaption class="card__name">Brandon Isahir Hernández Camacho</figcaption>
-          <div class="card__flag">
-            <img src="./icons/mexico-flag.svg" alt="Mexico Flag" width="24" />
+        <figure class="card__photos">
+          <div class="photo__profile"></div>
+          <div class="photo__nationality">
+            <img src="./icons/mexico-flag.svg" alt="Mexico Flag" />
           </div>
-          <figcaption class="card__about">Web Developer & Engineering Student</figcaption>
         </figure>
 
+        <div class="card__description">
+          <h1 class="description__name">Brandon Isahir Hernández Camacho</h1>
+          <p class="description__function">Web Developer & Engineering Student</p>
+        </div>
+
         <div class="body-card">
-          <h3>Skills</h3>
-          <ul>
-            <li>Git & GitHub</li>
-            <li>PHP</li>
-            <li>JavaScript</li>
-            <li>MySQL</li>
+          <h3 class="body-card__title">Skills</h3>
+          <ul class="body-card__list">
+            <li class="skill-item">HTML5</li>
+            <li class="skill-item">CSS3</li>
+            <li class="skill-item">JavaScript</li>
+            <li class="skill-item">Java</li>
+            <li class="skill-item">PHP</li>
+            <li class="skill-item">MySQL</li>
+            <li class="skill-item">Git & GitHub</li>
           </ul>
         </div>
 
         <footer class="footer-card">
-          <nav>
-            <a href="">GitHub</a>
-            <a href="">Facebook</a>
-            <a href="">Instagram</a>
+          <nav class="nav__social">
+            <a class="nav__social--icon" href="https://github.com/BrandonHernz" target="_blank">
+              <img class="icon__github" src="./icons/github-icon.svg" alt="GitHub Icon" />
+            </a>
+
+            <a class="nav__social--icon" href="https://twitter.com/brandon_ihernz" target="_blank">
+              <img class="icon__twitter" src="./icons/twitter-icon.svg" alt="Twitter Icon" />
+            </a>
+
+            <a class="nav__social--icon" href="https://www.instagram.com/brandon_ihernz/" target="_blank">
+              <img class="icon__instagram" src="./icons/instagram-icon.svg" alt="Instagram Icon" />
+            </a>
+
+            <a class="nav__social--icon btn" href="mailto:me@correo.com"> Contact me </a>
           </nav>
         </footer>
       </section>
