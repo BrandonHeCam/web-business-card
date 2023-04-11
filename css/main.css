@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --font: "Source Sans Pro", sans-serif;
+  --bg: #eaebe7;
+  --bg-btn: #204fa1;
+  --color-font: #0f0d35;
+  --color-secundary: #fab464;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: var(--font);
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  width: 40rem;
+  margin: 2.05rem auto;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(4, auto);
+  border: 0.1rem solid black;
+  padding: 2.4rem;
+  border-radius: 5%;
+  background-color: var(--bg);
+  position: relative;
+}
+
+.card__photos {
+  grid-column: 1 / 2;
+  position: relative;
+}
+
+.card__photos .photo__profile {
+  background-image: url(../images/profile-brandon.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 216px;
+  height: 216px;
+  border-radius: 50%;
+}
+
+.card__photos .photo__nationality {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 56px;
+  height: 56px;
+}
+
+.card__description {
+  grid-row: 2/ 3;
+  grid-column: 1 / 3;
+  padding: 1.6rem 0;
+  /* font-size: 1.8rem; */
+  /* line-height: 1.5; */
+}
+
+.card__description .description__name {
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: var(--color-font);
+}
+
+.card__description .description__function {
+  font-size: 2rem;
+  color: var(--color-font);
+}
+
+.body-card {
+  grid-row: 3/ 4;
+  grid-column: 1 / 3;
+  padding: 1.6rem 0;
+  font-size: 1.8rem;
+  /* line-height: 1.5; */
+  color: var(--color-font);
+}
+
+.body-card .body-card__title {
+  font-size: 2.4rem;
+}
+
+.body-card__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-card {
+  grid-row: 4/ 5;
+  grid-column: 1 / 3;
+  padding: 1.6rem 0;
+}
+
+.footer-card .nav__social {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  gap: 0.8rem;
+}
+
+.nav__social--icon {
+  display: grid;
+  place-items: center;
+}
+
+.nav__social--icon .icon__github,
+.nav__social--icon .icon__twitter,
+.nav__social--icon .icon__instagram,
+.nav__social--icon .icon__mail {
+  width: 40px;
+  height: 40px;
+}
+
+.nav__social--icon:last-child {
+  margin-left: auto;
+}
+
+.btn {
+  width: 112px;
+  background-color: var(--bg-btn);
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--bg);
+  border-radius: 1.6rem;
+}
+
+.btn:hover {
+  color: var(--color-font);
+  background-color: var(--color-secundary);
+}
